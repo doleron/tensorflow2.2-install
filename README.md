@@ -1,7 +1,6 @@
-# tensorflow2.2-install
 Set of resources showing how to install Tensorflow 2.2
 
-## Install Tensorflow from sources on linux
+# Install Tensorflow from sources on linux
 
 This instructions are based on https://www.tensorflow.org/install/source
 
