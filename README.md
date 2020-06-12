@@ -88,7 +88,7 @@ $ pip3 install --user /tmp/tensorflow_pkg/tensorflow-2.2.0-cp36-cp36m-linux_x86_
 
 ### Check out the instalation
 
-If eveything is good, tensorflow 2.2 is available on the system.
+If eveything is good, tensorflow 2.2 is available on the system. Run the following commands in order to check this.
 
 If you prefer python3, run the following command
 ```bash
