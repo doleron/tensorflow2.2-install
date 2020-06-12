@@ -1,10 +1,11 @@
+# installing Tensorflow 2.2
 Set of resources showing how to install Tensorflow 2.2
 
-# Install Tensorflow from sources on linux
+## Install Tensorflow from sources on linux
 
 This instructions are based on https://www.tensorflow.org/install/source
 
-## Pre flight
+### Pre flight
 
 First, update local machine
 
@@ -43,7 +44,7 @@ $ sudo mv bazelisk-linux-amd64 /usr/local/bin/bazel
 $ sudo chmod +x /usr/local/bin/bazel
 ```
 
-## gettting and building tensorflow 2.2
+### gettting and building tensorflow 2.2
 
 Use git to clone tensorflow from github:
 ```bash
@@ -85,7 +86,7 @@ Or using pip if you are using legacy python instead
 $ pip3 install --user /tmp/tensorflow_pkg/tensorflow-2.2.0-cp36-cp36m-linux_x86_64.whl
 ```
 
-## Check out the instalation
+### Check out the instalation
 
 If eveything is good, tensorflow 2.2 is available on the system.
 
@@ -103,9 +104,9 @@ $ python -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 2
 
 Any of the previous commands should print the current version. For me it outputs `2.2.0`.
 
-Obs.: make sure you change the current folder like `cd ~` or so. If you try to run the previous commands in the same fodler as tensorflow was compiled you end up with a error such as: `ImportError: cannot import name 'function_pb2'`.
+Obs.: make sure you change the current folder like `cd ~` or so. If you miss this step and trying import tensorflow in the same folder where tensorflow was compiled you will end up with an error such as: `ImportError: cannot import name 'function_pb2'`.
 
-## Actually running tensorflow
+### Actually running tensorflow
 
 If you are like me and prefer to see things actually running, I do recommend to call:
 
