@@ -108,7 +108,7 @@ Any of the previous commands should print the current version. For me it outputs
 
 Obs.: make sure you change the current folder like `cd ~` or so. If you miss this step and trying import tensorflow in the same folder where tensorflow was compiled you will end up with an error such as: `ImportError: cannot import name 'function_pb2'`.
 
-### Actually running tensorflow
+### Actually running TensorFlow
 
 If you are like me and prefer to see things actually running, I do recommend to call:
 
