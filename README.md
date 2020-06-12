@@ -1,4 +1,4 @@
-# installing Tensorflow 2.2
+# Installing Tensorflow 2.2
 Set of resources showing how to install Tensorflow 2.2
 
 ## Install Tensorflow from sources on linux
