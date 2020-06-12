@@ -18,7 +18,7 @@ $ sudo apt upgrade
 Installing pre-requirements:
 
 ```bash
-$ sudo apt install python-dev python-pip python3-dev python3-pip git curl
+$ sudo apt install python-dev python-pip python3-dev python3-pip git
 ```
 Installing python3 packages:
 
