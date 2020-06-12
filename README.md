@@ -50,13 +50,13 @@ Use git to clone tensorflow from github:
 ```bash
 git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow
-``
+```
 
 Call `configure` script. Reply the questions according your needs.
 If you are not sure about some question, try the default option
 ```bash
 ./configure
-``
+```
 
 Once configuration is finished, it is time to build the builder program using bazel:
 ```bazel
