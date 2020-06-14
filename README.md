@@ -5,15 +5,9 @@ Set of resources showing how to install Tensorflow 2.2
 
 ## Youtube tutorial
 
-These instructions are also available in the following video:
+These instructions are also available in the following video tutorial:
 
-<object width="425" height="350">
-  <param name="movie" value="https://www.youtube.com/watch?v=I83epddUgHg" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://www.youtube.com/watch?v=I83epddUgHg"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+[![Install TensorFlow 2.2 from sources on linux video tutorial](https://img.youtube.com/vi/I83epddUgHg/0.jpg)](https://www.youtube.com/watch?v=I83epddUgHg)
 
 ## Install TensorFlow from sources on linux
 
