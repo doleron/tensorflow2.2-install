@@ -3,15 +3,13 @@
 # Installing TensorFlow 2.2
 Set of resources showing how to install Tensorflow 2.2
 
-## Youtube tutorial
-
-These instructions are also available in the following video tutorial:
-
-[![Install TensorFlow 2.2 from sources on linux video tutorial](https://img.youtube.com/vi/I83epddUgHg/0.jpg)](https://www.youtube.com/watch?v=I83epddUgHg)
-
 ## Install TensorFlow from sources on linux
 
 This instructions are based on https://www.tensorflow.org/install/source
+
+A video tutorial can be found here:
+
+[![Install TensorFlow 2.2 from sources on linux video tutorial](https://img.youtube.com/vi/I83epddUgHg/0.jpg)](https://www.youtube.com/watch?v=I83epddUgHg)
 
 ### Pre flight
 
