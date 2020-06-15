@@ -89,7 +89,7 @@ $ pip3 install --user /tmp/tensorflow_pkg/tensorflow-2.2.0-cp36-cp36m-linux_x86_
 ```
 Or using pip if you are using legacy python instead
 ```bash
-$ pip3 install --user /tmp/tensorflow_pkg/tensorflow-2.2.0-cp36-cp36m-linux_x86_64.whl
+$ pip install --user /tmp/tensorflow_pkg/tensorflow-2.2.0-cp36-cp36m-linux_x86_64.whl
 ```
 
 ### Check out the instalation
