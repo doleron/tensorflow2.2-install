@@ -74,11 +74,40 @@ and then
 bazel build //tensorflow/tools/pip_package:build_pip_package
 ```
 
-This last command will demand hours to finish. In my experiments I wait around 4,5 hours.
+This command above will demand hours to finish. In my experiments this took around 4,5 hours long to finish.
 
-After finished, run:
+Once finished, run:
+```
+bazel-bin\tensorflow\tools\pip_package\build_pip_package C:/tmp/tensorflow_pkg/tensorflow-2.2.0-cp36-cp36m-win_amd64.whl
+```
+This command took a couple of minutes to finish, generating a `tensorflow-*.whl` python wheel file created into folder `C:/tmp/tensorflow_pkg` . In my case the file is named tensorflow-2.2.0-cp36-cp36m-win_amd64.whl .
+
+Once you know the file name, install it running:
 
 ```
-bazel-bin\tensorflow\tools\pip_package\build_pip_package C:/tmp/tensorflow_pkg
+pip3 install C:/tmp/tensorflow_pkg/tensorflow-version-cp36-cp36m-win_amd64.whl
 ```
+
+In this point tensorflow 2.2.0 should be properly installed on the system. Let's check out it.
+
+# validating installation
+
+move to another folder and run python:
+
+```
+cd ..
+python
+```
+then execute the following python instructions:
+```python
+import tensorflow as tf;
+print(tf__version__)
+```
+DISCLAIMER: Note that move to outside the folder where you build tensorflow is required. If you miss this you will end up with raise `ImportError("Could not import tensorflow. Do not import tensorflow "` error.
+
+If everything was good, python will print out the tensorflow version:
+```
+2.2.0
+```
+
 
