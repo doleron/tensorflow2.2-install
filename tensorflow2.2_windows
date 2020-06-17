@@ -1,0 +1,57 @@
+
+
+# download and install python 3.6
+
+https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe
+
+# download and install git for windows
+
+https://github.com/git-for-windows/git/releases/download/v2.27.0.windows.1/Git-2.27.0-64-bit.exe
+
+# install python packages with pip
+
+```
+pip3 install six numpy wheel
+pip3 install keras_applications==1.0.6 --no-deps
+pip3 install keras_preprocessing==1.0.5 --no-deps
+``
+
+# install bazel/bazelisk
+
+https://github.com/bazelbuild/bazelisk/releases/download/v1.5.0/bazelisk-windows-amd64.exe
+
+rename bazelisk-windows-amd64.exe to bazel.exe
+
+put bazel.exe visible to path variable
+
+# Install MSYS2 
+
+https://github.com/msys2/msys2-installer/releases/download/2020-06-02/msys2-x86_64-20200602.exe
+
+Follow the MSYS2 installation instruction: https://www.msys2.org/
+
+add C:\msys64\usr\bin to your %PATH% environment variable
+
+Execute:
+
+```
+pacman -S git patch unzip
+```
+
+# Install the Visual C++ stuff
+
+Microsoft Visual C++ 2019 Redistributable:
+Go to https://visualstudio.microsoft.com/downloads/ and search for "Microsoft Visual C++ 2019 Redistributable"
+
+
+
+# clone tensorflow
+
+open a command terminal and type
+
+```
+git clone https://github.com/tensorflow/tensorflow.git
+cd 
+```
+PS.: check out this link if the cloning is too slow: https://stackoverflow.com/questions/45768893/git-clone-in-windows-much-slower-than-in-linux
+
