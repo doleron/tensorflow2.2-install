@@ -1,4 +1,8 @@
 
+# Note about system requirements
+
+In my tests I used a Windows 10 pro 64 bits running on virtualbox with 6GB or 8GB de RAM and 100 GB of disk space.
+Bazel, the build system from google which tensorflow use for the build takes huge amounts of memory and CPU time. In adddition, during the build, bazel download several projects and artifacts being sometimes the build failing due to network issues like timeouts.
 
 # download and install python 3.6
 
@@ -43,7 +47,8 @@ pacman -S git patch unzip
 Microsoft Visual C++ 2019 Redistributable:
 Go to https://visualstudio.microsoft.com/downloads/ and search for "Microsoft Visual C++ 2019 Redistributable"
 
-
+Microsoft Build Tools 2019
+go to https://visualstudio.microsoft.com/visual-cpp-build-tools/ and download & install
 
 # clone tensorflow
 
@@ -51,7 +56,29 @@ open a command terminal and type
 
 ```
 git clone https://github.com/tensorflow/tensorflow.git
-cd 
+cd tensorflow
+git checkout v2.2.0
 ```
-PS.: check out this link if the cloning is too slow: https://stackoverflow.com/questions/45768893/git-clone-in-windows-much-slower-than-in-linux
+PS.: check out this link if the cloning is too slow: https://stackoverflow.com/questions/45768893/git-clone-in-windows-much-slower-than-in-linux and restart
+
+# build
+
+execute:
+
+```
+python ./configure.py
+```
+and then
+
+```
+bazel build //tensorflow/tools/pip_package:build_pip_package
+```
+
+This last command will demand hours to finish. In my experiments I wait around 4,5 hours.
+
+After finished, run:
+
+```
+bazel-bin\tensorflow\tools\pip_package\build_pip_package C:/tmp/tensorflow_pkg
+```
 
