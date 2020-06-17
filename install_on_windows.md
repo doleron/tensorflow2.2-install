@@ -9,7 +9,7 @@ Bazel, the Google build system used by TensorFlow build takes huge amounts of me
 
 It is always convenient to update windows with windows update before carry out the TensorFlow build.
 
-# Download and install python 3.6
+# Download and install python
 
 Tensorflow documents recommeds to use Python 3.5 or 3.6. But in this link https://www.tensorflow.org/install/source_windows#tested_build_configurations it is report version 2.2 working with Python 3.8 as well.
 
