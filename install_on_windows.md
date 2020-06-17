@@ -36,7 +36,7 @@ https://github.com/git-for-windows/git/releases/download/v2.27.0.windows.1/Git-2
 pip3 install six numpy wheel
 pip3 install keras_applications==1.0.6 --no-deps
 pip3 install keras_preprocessing==1.0.5 --no-deps
-``
+```
 
 # Install bazel/bazelisk
 
